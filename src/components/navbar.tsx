@@ -136,7 +136,7 @@ const Navbar: FC<NavbarProps> = () => {
   return (
     <header className="bg-white sticky top-0 z-40">
       <nav
-        className="mx-auto flex max-w-7xl items-center justify-between p-3 lg:px-8"
+        className="mx-auto flex max-w-7xl items-center justify-between px-5 xl:px-0 py-3"
         aria-label="Global"
       >
         <div className="flex lg:flex-1 gap-3 items-center ">
@@ -445,7 +445,7 @@ const Navbar: FC<NavbarProps> = () => {
                             </Link>
                           </div>
                         </div>
-                     
+
                         <div className="absolute right-0 top-0 lg:left-48 xl:left-60  hidden h-[200px] min-h-[1em] w-px self-stretch border-t-0 bg-gradient-to-tr from-transparent via-neutral-800 to-transparent  opacity-40  lg:block"></div>
                       </div>
                     </div>
@@ -1089,13 +1089,13 @@ const Navbar: FC<NavbarProps> = () => {
                             />
                           </svg>
                           <div className="ml-1 flex flex-wrap xl:flex-nowrap flex-col">
-                          <Link
-                                    href="/artificial-intelligence"
-                                    className="leading-4 font-semibold text-sky-700  hover:text-black "
-                                    onClick={servicesHandler}
-                                  >
-                                    <h3>Custom AI Solution</h3>
-                                  </Link>
+                            <Link
+                              href="/artificial-intelligence"
+                              className="leading-4 font-semibold text-sky-700  hover:text-black "
+                              onClick={servicesHandler}
+                            >
+                              <h3>Custom AI Solution</h3>
+                            </Link>
                           </div>
                         </div>
 
@@ -2013,13 +2013,13 @@ const Navbar: FC<NavbarProps> = () => {
                                   />
                                 </svg>
                                 <div className="ml-1 flex flex-wrap xl:flex-nowrap flex-col">
-                                <Link
-                              href="/web-application"
-                              className="leading-4  font-semibold text-sky-700 hover:text-black gap-2 flex "
-                              onClick={() => setMobileMenuOpen(false)}
-                            >
-                              <h3>Custom Web App</h3>
-                            </Link>
+                                  <Link
+                                    href="/web-application"
+                                    className="leading-4  font-semibold text-sky-700 hover:text-black gap-2 flex "
+                                    onClick={() => setMobileMenuOpen(false)}
+                                  >
+                                    <h3>Custom Web App</h3>
+                                  </Link>
                                 </div>
                               </div>
 
@@ -2648,7 +2648,7 @@ const Navbar: FC<NavbarProps> = () => {
                       </div>
                     </div>
                   </div>
-              )}
+                )}
 
                 <Link
                   href="/portfolio"
