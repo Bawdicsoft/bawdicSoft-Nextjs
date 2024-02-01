@@ -15,14 +15,14 @@ const FormSection: FC<formSectionProps> = () => {
   const [Val1, setVal1] = useState("Select One");
   const [Val2, setVal2] = useState("Experience");
   const optionList = [
-    { id: 1, title: "MERN Stack Developer", desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit." },
-    { id: 2, title: "MEAN Stack Developer", desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit." },
-    { id: 3, title: "Full Stack Developer", desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit." },
-    { id: 4, title: "Generative(AI) Developer", desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit." },
-    { id: 5, title: "Phyton Developer", desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit." },
-    { id: 6, title: "UI/UX Designer", desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit." },
-    { id: 7, title: "Block Chain Developer", desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit." },
-    { id: 8, title: "WordPress Developer", desc: "Lorem ipsum dolor sit amet consectetur, adipisicing elit." },
+    { id: 1, title: "MERN Stack Developer", desc: "Where MongoDB, Express, React.js, and Node.js converge." },
+    { id: 2, title: "MEAN Stack Developer", desc: "Where MongoDB, Express, Angular, and Node.js converge" },
+    { id: 3, title: "Full Stack Developer", desc: "Where engineers complete digital ecosystems for user-centric realities." },
+    { id: 4, title: "Generative(AI) Developer", desc: "Where algorithms breathe life into boundless creativity." },
+    { id: 5, title: "Phyton Developer", desc: " Where code speaks a language of solutions and insights." },
+    { id: 6, title: "UI/UX Designer", desc: " Where aesthetics meet compelling functionality." },
+    { id: 7, title: "BlockChain Developer", desc: " Where each block secures transparent solutions." },
+    { id: 8, title: "WordPress Developer", desc: "Where simplicity transforms into sophistication. " },
   ]
   return (
     <div>

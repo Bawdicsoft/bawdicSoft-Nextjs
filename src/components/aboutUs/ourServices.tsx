@@ -99,7 +99,8 @@ const OurSevices: FC<ourSevicesProps> = () => {
     <section className="relative rounded-br-[250px] rounded-b-[250px] rounded-bl-[250px] flex justify-center mb-48 md:mb-32 px-5 md:px-10 pb-72 flex-col items-center mt-16 py-24 md:pt-32  bg-gradient-to-r from-sky-950   via-sky-700 via-30% to-sky-600 to-70%
      bg-blend-multiply " >
  <h4 className=" text-3xl md:text-4xl  lg:text-5xl font-bold text-white text-center">Get in Touch With Us.</h4>
- <p className="text-white text-md py-3 text-center">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta quisquam, voluptate nam doloribus dignissimos quae.</p>
+ <p className="text-white text-md py-3 text-center">Connect with us - Your gateway to seamless solutions and unparalleled support.
+</p>
  <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  md:px-12 max-w-7xl gap-5 pt-5 md:pt-10">
   <div className="p-5 md:p-8 flex rounded-3xl bg-white">
   <div className="bg-sky-950 p-5  flex justify-center items-center w-16 h-16  rounded-full">
@@ -141,7 +142,8 @@ const OurSevices: FC<ourSevicesProps> = () => {
     {/* sign up form */}
     <div className="absolute -bottom-32 md:-bottom-24  shadow-2xl flex bg-white max-w-7xl mx-5 rounded-3xl py-5 md:py-16 flex-col px-5 md:px-32 justify-center gap-2 items-center">
    <h4 className="text-2xl  md:text-3xl font-semibold text-center">Sing Up for Our Newsletter.</h4>
-   <p className="text-gray-800 text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. Excepturi, quas!</p>
+   <p className="text-gray-800 text-center">Stay Ahead, Stay Informed - Unlock a world of innovation delivered to your inbox.
+</p>
    <form className="flex justify-center flex-wrap gap-2 items-center  md:gap-0  md:w-[700px] pt-4">
     <input  type="email" className="bg-sky-100 focus:outline-none focus:ring focus:border-sky-950  rounded-3xl p-4 py-4 md:basis-1/2" placeholder="Enter Your Email"/>
     <button type="submit" className="bg-sky-950 px-16 hover:bg-sky-700 py-4 md:basis-1/4 text-white font-semibold ml-5 rounded-3xl">Subscribe</button>

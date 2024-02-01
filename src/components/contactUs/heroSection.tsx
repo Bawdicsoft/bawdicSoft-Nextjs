@@ -33,10 +33,8 @@ const HeroSection: FC<heroSectionProps> = () => {
          height: "calc(100vh - 48px)",
        }}>
 <h4 className=" text-3xl md:text-4xl  lg:text-7xl font-bold text-white text-center ">Contact</h4>
-<p className="mb-8 text-lg md:text-xl font-normal text-gray-200 pt-5 max-w-5xl text-center">
-          We have a strong belief in technology's potential, and a greater
-          belief in human potential Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, dicta consequatur. Itaque, veniam optio id saepe molestias possimus a eligendi!
-      </p>
+<p className="mb-8 text-lg md:text-2xl font-normal text-gray-200 pt-5 max-w-5xl text-center">
+At BawdicSoft, your satisfaction is our priority. Our responsive team is committed to providing exceptional customer service. We guarantee timely and meaningful responses to all your messages. Your engagement matters, and we're dedicated to ensuring your experience with BawdicSoft is seamless. Thank you for choosing us - where your questions are not just answered, but valued. Discover the excellence of BawdicSoft today! </p>
    </section>
   );
 };

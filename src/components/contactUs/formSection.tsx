@@ -347,13 +347,12 @@ const FormSection: FC<formSectionProps> = () => {
               <span className="bg-sky-600 w-[100px] h-[2px]"></span>
               <span className="bg-gray-200 w-[300px] h-[2px]"></span>
             </div>
-            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Sunt voluptate ut nulla commodi. Voluptate ipsa excepturi ipsam blanditiis rem? Vitae, modi quod doloremque enim quis fugit molestiae minus nobis esse.
-            </p>
-            <div className="flex  flex-wrap gap-2 pt-10">
-              <Link href="https://wa.me/+923178866631" target="_blank" className="flex rounded-full bg-sky-900 justify-center items-center p-2 cursor-pointer "><FaWhatsapp className="text-white text-2xl" /></Link>
-              <Link href="https://www.linkedin.com/company/77098544/admin/feed/posts/" target="_blank" className="flex rounded-full bg-sky-900 justify-center items-center p-2 cursor-pointer "><FaLinkedin className="text-white text-2xl" /></Link>
-              <Link href="https://twitter.com/BawdicSoft" target="_blank" className="flex rounded-full bg-sky-900 justify-center items-center p-2 cursor-pointer "><GrTwitter className="text-white text-2xl" /></Link>
-              <Link href="https://www.facebook.com/BawdicSoftPvtLtd" target="_blank" className="flex rounded-full bg-sky-900 justify-center items-center p-2 cursor-pointer "><MdFacebook className="text-white text-2xl" /></Link>
+           
+            <div className="flex  flex-wrap gap-5 pt-5">
+              <Link href="https://wa.me/+923178866631" target="_blank" className="flex rounded-full bg-sky-900 justify-center items-center p-3 cursor-pointer "><FaWhatsapp className="text-white text-3xl" /></Link>
+              <Link href="https://www.linkedin.com/company/77098544/admin/feed/posts/" target="_blank" className="flex rounded-full bg-sky-900 justify-center items-center p-3 cursor-pointer "><FaLinkedin className="text-white text-3xl" /></Link>
+              <Link href="https://twitter.com/BawdicSoft" target="_blank" className="flex rounded-full bg-sky-900 justify-center items-center p-3 cursor-pointer "><GrTwitter className="text-white text-3xl" /></Link>
+              <Link href="https://www.facebook.com/BawdicSoftPvtLtd" target="_blank" className="flex rounded-full bg-sky-900 justify-center items-center p-3 cursor-pointer "><MdFacebook className="text-white text-3xl" /></Link>
 
 
             </div>
