@@ -1,11 +1,11 @@
 import React, { FC, ReactNode, MouseEvent } from "react";
-import HerSectionimg from "../../../public/images/aboutImages/aboutusHerosectionImg.jpg";
+// import HerSectionimg from "../../../public/images/aboutImages/aboutusHerosectionImg.jpg";
 import { StaticImageData } from "next/image";
-interface HeroSectionProps { }
+interface HeroSectionProps {}
 type heroImg = {
   img: StaticImageData;
 };
-const data: heroImg = { img: HerSectionimg };
+// const data: heroImg = { img: HerSectionimg };
 const HeroSection: FC<HeroSectionProps> = () => {
   return (
     // <section
@@ -25,13 +25,19 @@ const HeroSection: FC<HeroSectionProps> = () => {
     //     </p>
     //   </div>
     // </section>
-    <section className="flex justify-center flex-col items-center  bg-gradient-to-r from-sky-950 px-8  via-sky-700 via-30% to-sky-600 to-70%
-     bg-blend-multiply"  style={{
+    <section
+      className="flex justify-center flex-col items-center  bg-gradient-to-r from-sky-950 px-8  via-sky-700 via-30% to-sky-600 to-70%
+     bg-blend-multiply"
+      style={{
         height: "calc(100vh - 48px)",
-      }}>
-      <h4 className=" text-3xl md:text-4xl  lg:text-7xl font-bold text-white text-center ">About Us</h4>
+      }}
+    >
+      <h4 className=" text-3xl md:text-4xl  lg:text-7xl font-bold text-white text-center ">
+        About Us
+      </h4>
       <p className="mb-8 text-lg md:text-3xl font-normal text-gray-200 pt-5 max-w-5xl text-center">
-        Explore BawdicSoft, where diverse tech experiences converge  </p>
+        Explore BawdicSoft, where diverse tech experiences converge{" "}
+      </p>
     </section>
   );
 };
