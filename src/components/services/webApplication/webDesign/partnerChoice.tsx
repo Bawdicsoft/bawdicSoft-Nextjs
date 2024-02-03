@@ -2,15 +2,15 @@ import React, { FC, ReactNode, MouseEvent } from "react";
 import needImage from "../../../../../public/images/blockChain/NFT/nftMarketPlace/partnerChoiseimg.webp";
 import Image, { StaticImageData } from "next/image";
 import AnimatedComponentLeft from "@/components/home/animationLeft";
-interface partnerChoiceSectionResponsiveWebAppProps {}
+interface partnerChoiceSectionWebDesignProps {}
 
 type imageList = {
   image: StaticImageData;
 };
 const imageData: imageList = { image: needImage };
 
-const PartnerChoiceSectionResponsiveWebApp: FC<
-  partnerChoiceSectionResponsiveWebAppProps
+const PartnerChoiceSectionWebDesign: FC<
+  partnerChoiceSectionWebDesignProps
 > = () => {
   console.log(imageData);
   return (
@@ -50,4 +50,4 @@ const PartnerChoiceSectionResponsiveWebApp: FC<
   );
 };
 
-export default PartnerChoiceSectionResponsiveWebApp;
+export default PartnerChoiceSectionWebDesign;

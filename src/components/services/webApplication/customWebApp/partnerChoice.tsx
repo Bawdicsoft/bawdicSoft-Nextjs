@@ -1,36 +1,37 @@
 import React, { FC, ReactNode, MouseEvent } from "react";
-// import needImage from "../../../../../../public/images/blockChain/NFT/nftDevelopmentImages/needImage.webp";
+import needImage from "../../../../../public/images/blockChain/NFT/nftMarketPlace/partnerChoiseimg.webp";
 import Image, { StaticImageData } from "next/image";
 import AnimatedComponentLeft from "@/components/home/animationLeft";
-interface NeedNftProps {}
+interface partnerChoiceSectionCustomWebAppProps {}
 
 type imageList = {
   image: StaticImageData;
 };
-// const imageData: imageList = { image: needImage };
+const imageData: imageList = { image: needImage };
 
-const NeedWebDesign: FC<NeedNftProps> = () => {
-  // console.log(imageData);
+const PartnerChoiceSectionCustomWebApp: FC<
+  partnerChoiceSectionCustomWebAppProps
+> = () => {
+  console.log(imageData);
   return (
-    <div className="bg-sky-950 flex justify-center">
-      <div className="max-w-7xl grid grid-cols-1 md:grid-cols-2  md:px-16    py-16 ">
+    <div className="flex justify-center">
+      <div className="grid max-w-7xl grid-cols-1 md:grid-cols-2  md:px-16  gap-0 md:gap-10  py-8">
         <AnimatedComponentLeft>
           <div>
             <Image
-              src={"/images/blockChain/NFT/nftDevelopmentImages/needImage.webp"}
+              src={imageData.image.src}
               alt=""
-              width={330}
-              height={300}
-              className="w-96 h-96 px-5 md:px-0 "
+              width={430}
+              height={470}
+              className="w-full  h-84 "
             />
           </div>
         </AnimatedComponentLeft>
-
-        <div className=" pt-10 px-5  md:pt-5 ">
-          <p className="mb-4 text-3xl font-semibold tracking-tight leading-7 text-white md:text-4xl lg:text-5xl ">
-            Why and Where do you need NFTs?
+        <div className="  px-5  ">
+          <p className="font-bold text-2xl md:text-3xl lg:text-4xl pb-8">
+            Partners of choice
           </p>
-          <p className="text-md text-gray-200 leading-6">
+          <p className="text-md text-gray-800 leading-6">
             NFTs have been proven to be one of the very few ideas that changed
             the whole landscape of today's digital world. Imagine profiting from
             the lucrative world of cryptocurrency using your real-world assets
@@ -49,4 +50,4 @@ const NeedWebDesign: FC<NeedNftProps> = () => {
   );
 };
 
-export default NeedWebDesign;
+export default PartnerChoiceSectionCustomWebApp;

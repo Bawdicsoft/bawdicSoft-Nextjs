@@ -1,25 +1,25 @@
 import React, { FC, ReactNode, MouseEvent } from "react";
-// import needImage from "../../../../../../public/images/blockChain/NFT/nftMarketPlace/partnerChoiseimg.webp";
+import needImage from "../../../../../public/images/blockChain/NFT/nftMarketPlace/partnerChoiseimg.webp";
 import Image, { StaticImageData } from "next/image";
 import AnimatedComponentLeft from "@/components/home/animationLeft";
-interface partnerChoiceSectionProps {}
+interface partnerChoiceSectionComputerVisionProps {}
 
 type imageList = {
   image: StaticImageData;
 };
-// const imageData: imageList = { image: needImage };
+const imageData: imageList = { image: needImage };
 
-const PartnerChoiceSectionFullStack: FC<partnerChoiceSectionProps> = () => {
-  // console.log(imageData);
+const PartnerChoiceSectionComputerVision: FC<
+  partnerChoiceSectionComputerVisionProps
+> = () => {
+  console.log(imageData);
   return (
     <div className="flex justify-center">
       <div className="grid max-w-7xl grid-cols-1 md:grid-cols-2  md:px-16  gap-0 md:gap-10  py-8">
         <AnimatedComponentLeft>
           <div>
             <Image
-              src={
-                "/images/blockChain/NFT/nftMarketPlace/partnerChoiseimg.webp"
-              }
+              src={imageData.image.src}
               alt=""
               width={430}
               height={470}
@@ -50,4 +50,4 @@ const PartnerChoiceSectionFullStack: FC<partnerChoiceSectionProps> = () => {
   );
 };
 
-export default PartnerChoiceSectionFullStack;
+export default PartnerChoiceSectionComputerVision;
