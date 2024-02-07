@@ -143,7 +143,7 @@ const Navbar: FC<NavbarProps> = () => {
           <div className="-m-1.5 p-1.5">
             <span className="sr-only">Your Services</span>
             <Image
-              className=" w-auto hidden md:block"
+              className="w-8 h-8 md:w-auto md:h-auto"
               src={logo}
               alt=""
               width={40}
