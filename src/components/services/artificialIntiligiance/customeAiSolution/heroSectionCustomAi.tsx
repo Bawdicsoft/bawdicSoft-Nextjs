@@ -14,7 +14,7 @@ const HeroSectionCustomAi: FC<deFiSectionProps> = () => {
     <section
       className=" pt-32 md:pt-0 bg-center bg-cover bg-no-repeat  bg-gray-500 bg-blend-multiply"
       style={{
-        backgroundImage: `url(/images/AI/heroSection.png)`,
+        backgroundImage: `url(/images/ServicesPagesCoverImages/Custom_ai_sols.jpg)`,
         height: "calc(100vh - 48px)",
       }}
     >
@@ -23,9 +23,7 @@ const HeroSectionCustomAi: FC<deFiSectionProps> = () => {
           Custom AI Solution
         </h1>
         <p className="mb-8  md:text-lg font-normal text-gray-300 lg:text-xl sm:px-16 ">
-          Focus on AI services, creating machines that require human-like
-          intelligence such as learning from experience, understanding natural
-          languages, and solving complex problems.
+        Crafting Tomorrow's Solutions Today: Adapted Intelligence with Our Custom AI Innovations
         </p>
       </div>
     </section>

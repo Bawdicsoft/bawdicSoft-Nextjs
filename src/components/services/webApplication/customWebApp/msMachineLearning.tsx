@@ -18,13 +18,10 @@ const MasterMachineSectionCustomWebApp: FC<
       <div className=" grid grid-cols-1 px-5 gap-5  md:grid-cols-2    py-16">
         <div className="max-w-lg lg:max-w-lg self-center  px-5   order-2 md:order-none">
           <p className="mb-4 text-2xl  font-semibold tracking-tight leading-7 md:text-3xl lg:text-4xl ">
-            Master Machine Learning​
-          </p>
+          Demonstrated Web App Development
+                    </p>
           <p className="text-md text-gray-900 leading-6">
-            Unleash the power of your data with our machine-learning experts.
-            From predictive analytics to personalized recommendations, our
-            machine-learning solutions are designed to improve your business
-            insights and decision-making.
+          Explore limitless possibilities with Us. Our custom web app development caters to your unique needs, from personalized features to user-centric interfaces. Elevate your business with applications designed for coherent functionality and optimal user engagement.
           </p>
         </div>
         <AnimatedComponentRight>

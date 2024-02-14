@@ -99,7 +99,7 @@ const blockChaninList: BlockChaninList[] = [
   { name: "Token Development", href: "/token-development", icon: PhoneIcon },
 ];
 
-interface NavbarProps {}
+interface NavbarProps { }
 
 function classNames(
   ...classes: (string | boolean | undefined | null)[]

@@ -29,13 +29,9 @@ const LanguageModelSectionMachineLearning: FC<
         </AnimatedComponentLeft>
         <div className="max-w-lg self-center lg:max-w-lg  pt-10 px-5   ">
           <p className="mb-4 text-2xl text-white  font-semibold tracking-tight leading-7 md:text-3xl lg:text-4xl ">
-            Language Model (LLM) Skills
-          </p>
+          Performance Optimization for Speed          </p>
           <p className="text-md  text-white leading-6">
-            Communicate clearly and intelligently through our Language Model
-            (LLM) services. Leverage natural language processing, sentiment
-            analysis, and more to redefine how you connect with your audience.
-          </p>
+          Speed meets functionality here. Our responsive web apps not only adjust to different screens but are optimized for quick loading times. Experience boosted performance without compromising on features, providing users with a coherent and efficient interaction.  </p>
         </div>
       </div>
     </div>

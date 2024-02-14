@@ -29,12 +29,11 @@ const LanguageModelSectionCustomWebApp: FC<
         </AnimatedComponentLeft>
         <div className="max-w-lg self-center lg:max-w-lg  pt-10 px-5   ">
           <p className="mb-4 text-2xl text-white  font-semibold tracking-tight leading-7 md:text-3xl lg:text-4xl ">
-            Language Model (LLM) Skills
+          Scalable Solutions for Growth
           </p>
           <p className="text-md  text-white leading-6">
-            Communicate clearly and intelligently through our Language Model
-            (LLM) services. Leverage natural language processing, sentiment
-            analysis, and more to redefine how you connect with your audience.
+          We understand the evolving nature of businesses. Our web apps are scalable, adapting to your growth trajectory. From initial development to future expansions, we provide solutions that grow with your enterprise, ensuring preserved success in the digital landscape.
+
           </p>
         </div>
       </div>

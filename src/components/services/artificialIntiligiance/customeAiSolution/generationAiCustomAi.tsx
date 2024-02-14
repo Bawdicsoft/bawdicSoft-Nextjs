@@ -18,12 +18,10 @@ const GenerationAISectionCustomeAi: FC<
       <div className=" grid grid-cols-1 gap-5 px-5  md:grid-cols-2    py-16">
         <div className="max-w-lg lg:max-w-lg  self-center  px-5   order-2 md:order-none ">
           <p className="mb-4 text-2xl  font-semibold tracking-tight leading-7 md:text-3xl lg:text-4xl ">
-            Generation AI Brilliance​
+          End-to-End AI Integration
           </p>
           <p className="text-md text-gray-800 leading-6">
-            Inspire creativity and innovation with our productive AI solutions.
-            From art to content creation, our AI algorithms generate new ideas
-            and products that take your business into uncharted territory.
+          coherently integrate AI into your operations with Us. Our comprehensive approach covers every aspect from formulating a robust data strategy and acquisition plan to model deployment, optimization, continuous monitoring, and maintenance. User training and support ensure a smooth transition, empowering your team to leverage the full potential of AI.
           </p>
         </div>
         <AnimatedComponentRight>

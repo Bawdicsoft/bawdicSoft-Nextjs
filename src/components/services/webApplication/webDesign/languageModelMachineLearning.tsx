@@ -29,12 +29,10 @@ const LanguageModelSectionWebDesign: FC<
         </AnimatedComponentLeft>
         <div className="max-w-lg self-center lg:max-w-lg  pt-10 px-5   ">
           <p className="mb-4 text-2xl text-white  font-semibold tracking-tight leading-7 md:text-3xl lg:text-4xl ">
-            Language Model (LLM) Skills
-          </p>
+          Customized Brand Identity          </p>
           <p className="text-md  text-white leading-6">
-            Communicate clearly and intelligently through our Language Model
-            (LLM) services. Leverage natural language processing, sentiment
-            analysis, and more to redefine how you connect with your audience.
+          Transform your brand online with Us. We specialize in crafting Demonstrated web designs that reflect your unique identity. Our adapted solutions encompass color schemes, typography, and visual elements, creating a cohesive brand experience that resonates with your audience.
+
           </p>
         </div>
       </div>

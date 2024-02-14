@@ -29,13 +29,10 @@ const LanguageModelSectionFullStack: FC<
         </AnimatedComponentLeft>
         <div className="max-w-lg self-center lg:max-w-lg  pt-10 px-5   ">
           <p className="mb-4 text-2xl text-white  font-semibold tracking-tight leading-7 md:text-3xl lg:text-4xl ">
-            Language Model (LLM) Skills
-          </p>
+          Versatile Technology Stack Mastery:          </p>
           <p className="text-md  text-white leading-6">
-            Communicate clearly and intelligently through our Language Model
-            (LLM) services. Leverage natural language processing, sentiment
-            analysis, and more to redefine how you connect with your audience.
-          </p>
+          We navigate the technological path adeptly. Our full stack developers are well-versed in a variety of technologies, frameworks, and databases. Whether it's crafting responsive interfaces or optimizing server performance, we control the power of a versatile technology stack.
+  </p>
         </div>
       </div>
     </div>
