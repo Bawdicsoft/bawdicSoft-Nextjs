@@ -99,7 +99,7 @@ const blockChaninList: BlockChaninList[] = [
   { name: "Token Development", href: "/token-development", icon: PhoneIcon },
 ];
 
-interface NavbarProps { }
+interface NavbarProps {}
 
 function classNames(
   ...classes: (string | boolean | undefined | null)[]
@@ -110,10 +110,15 @@ function classNames(
 const Navbar: FC<NavbarProps> = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
   const [checkClick, setCheckClick] = useState<boolean>(false);
+  const [checkClicksec, setCheckClicksec] = useState<boolean>(false);
+
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const servicesHandler = () => {
     setCheckClick(!checkClick);
+  };
+  const servicesHandlertwo = () => {
+    setCheckClicksec(!checkClicksec);
   };
 
   const handleClickOutside = (event: MouseEvent) => {
@@ -181,7 +186,7 @@ const Navbar: FC<NavbarProps> = () => {
             data-dropdown-toggle="mega-menu-dropdown"
             className="flex items-center justify-between  w-full py-2 px-3  md:w-auto  text-sm font-bold leading-6 text-sky-600 hover:text-black text-[17px]  border-none lg:p-0   focus:border-none    "
           >
-            Services{" "}
+            Services
             <svg
               className="w-2.5 h-2.5 ms-3"
               aria-hidden="true"
@@ -1264,6 +1269,185 @@ const Navbar: FC<NavbarProps> = () => {
               </div>
             </div>
           )}
+          {/* <DropDown /> */}
+          <button
+            onClick={servicesHandlertwo}
+            id="mega-menu-dropdown-button"
+            data-dropdown-toggle="mega-menu-dropdown"
+            className="flex items-center justify-between  w-full py-2 px-3  md:w-auto  text-sm font-bold leading-6 text-sky-600 hover:text-black text-[17px]  border-none lg:p-0   focus:border-none    "
+          >
+            Blockchain
+            <svg
+              className="w-2.5 h-2.5 ms-3"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+          </button>
+          {checkClicksec && (
+            <div
+              ref={dropdownRef}
+              id="mega-menu-dropdown"
+              className="absolute z-10  text-sm bg-white border border-gray-100 rounded-lg shadow-md mt-10 p-4 left-1/2 transform -translate-x-1/2 max-w-7xl "
+            >
+  {/* Blockchain Section */}              <div className="pt-4 pl-4 text-gray-900">
+                <div
+                  className="space-y-4"
+                  aria-labelledby="mega-menu-dropdown-button"
+                >
+                  <div className="flex-wrap flex flex-col gap-2 items-center">
+                    <div className="relative px-2 flex-wrap flex-col flex">
+                      <div className=" relative">
+                        <div className=" flex items-center font-semibold text-sky-700">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 48 48"
+                            width="26px"
+                            height="26px"
+                          >
+                            <path
+                              fill="#90caf9"
+                              d="M44.475,24.803c0.774-2.528,0.53-5.23-0.722-7.583c-2.018-3.792-6.225-5.638-10.284-5.086 c-1.802-1.935-4.265-3.074-6.929-3.166c-4.294-0.149-7.996,2.572-9.547,6.363c-2.576,0.593-4.794,2.156-6.206,4.417 c-2.275,3.643-1.771,8.21,0.737,11.449c-0.774,2.528-0.53,5.23,0.722,7.583c2.018,3.792,6.225,5.638,10.284,5.086 c1.802,1.935,4.265,3.074,6.929,3.167c4.293,0.148,7.996-2.573,9.547-6.364c2.576-0.593,4.794-2.156,6.205-4.417 C47.486,32.608,46.982,28.042,44.475,24.803z"
+                            />
+                            <path
+                              fill="#18193f"
+                              d="M38.844,17.559l-7.523-4.343c-0.493-0.284-1.1-0.285-1.594-0.003l-10.245,5.855l0.021-4.018 l7.913-4.569c3.445-1.989,7.938-1.371,10.44,1.722c0.594,0.734,1.04,1.539,1.341,2.382c0.211,0.592,0.772,0.984,1.4,0.984 c1.037,0,1.772-1.03,1.421-2.006c-0.416-1.158-1.033-2.265-1.853-3.275c-2.488-3.065-6.393-4.357-10.151-3.807 c-1.987-2.124-4.699-3.373-7.63-3.473c-4.733-0.161-8.814,2.839-10.525,7.018c-2.842,0.654-5.289,2.378-6.847,4.873 c-3.318,5.313-1.284,12.41,4.142,15.543l7.523,4.343c0.493,0.284,1.1,0.285,1.594,0.003l10.245-5.855l-0.021,4.018l-7.902,4.563 c-3.448,1.991-7.945,1.378-10.451-1.715c-0.591-0.73-1.035-1.53-1.336-2.368c-0.212-0.591-0.772-0.982-1.4-0.982h0 c-1.039,0-1.774,1.033-1.421,2.01c0.326,0.901,0.774,1.771,1.344,2.589c2.43,3.487,6.613,5.039,10.645,4.465 c1.987,2.129,4.7,3.381,7.634,3.483c4.736,0.163,8.82-2.838,10.531-7.02c2.841-0.654,5.288-2.378,6.844-4.872 C46.303,27.788,44.269,20.691,38.844,17.559z M34,33.723c0,4.324-3.313,8.077-7.633,8.269c-1.837,0.082-3.585-0.463-5.024-1.496 c0.274-0.13,0.546-0.266,0.812-0.42l7.521-4.342c0.493-0.285,0.799-0.81,0.802-1.38l0.054-9.883c0.003-0.55-0.441-0.999-0.992-1 c-0.549-0.002-0.995,0.441-0.998,0.99l-0.011,2.172L18.498,32.37l-7.918-4.571c-3.745-2.163-5.339-6.908-3.345-10.745 c0.848-1.633,2.196-2.875,3.812-3.605C11.022,13.753,11,14.058,11,14.367v8.684c0,0.569,0.302,1.095,0.794,1.382l8.73,5.055 c0.475,0.275,1.082,0.113,1.358-0.361c0.277-0.476,0.114-1.085-0.362-1.361L14,23.42v-9.143c0-4.325,3.313-8.077,7.634-8.269 c1.835-0.081,3.582,0.462,5.02,1.494c-0.264,0.127-0.526,0.259-0.782,0.407l-7.548,4.357c-0.494,0.285-0.799,0.81-0.802,1.38 l-0.054,9.797c-0.003,0.55,0.441,0.999,0.992,1c0.549,0.002,0.995-0.441,0.998-0.99l0.011-2.087l4.552-2.603L34,24.58V33.723z M40.765,30.946c-0.848,1.633-2.195,2.875-3.812,3.604C36.978,34.248,37,33.944,37,33.636v-8.687c0-0.569-0.302-1.095-0.794-1.382 l-10.191-5.943l3.487-1.994l7.918,4.571C41.165,22.364,42.759,27.109,40.765,30.946z"
+                            />
+                          </svg>
+                          <div className="ml-1 flex flex-wrap xl:flex-nowrap flex-col">
+                            <Link
+                              href="/web-app/web-design"
+                              className="leading-4  font-semibold text-sky-700 hover:text-black"
+                              onClick={servicesHandlertwo}
+                            >
+                              <h3>AI</h3>
+                            </Link>
+                          </div>
+                        </div>
+
+                        <div className="my-6 flex items-center font-semibold text-sky-700">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 128 128"
+                            width="26px"
+                            height="26px"
+                          >
+                            <circle cx="89" cy="89" r="35" fill="#fff" />
+                            <circle cx="39" cy="39" r="35" fill="#90caf9" />
+                            <path
+                              fill="#90caf9"
+                              d="M39,77C18.05,77,1,59.95,1,39S18.05,1,39,1s38,17.05,38,38S59.95,77,39,77z M39,7C21.36,7,7,21.35,7,39 s14.36,32,32,32s32-14.35,32-32S56.64,7,39,7z"
+                            />
+                            <path
+                              fill="#90caf9"
+                              d="M89,127c-20.95,0-38-17.05-38-38c0-1.22,0.06-2.45,0.17-3.66c0.16-1.65,1.64-2.85,3.27-2.7 c1.65,0.16,2.86,1.62,2.7,3.27C57.05,86.93,57,87.97,57,89c0,17.65,14.36,32,32,32s32-14.35,32-32s-14.36-32-32-32 c-1.04,0-2.09,0.05-3.11,0.15c-1.64,0.16-3.12-1.05-3.27-2.7s1.05-3.12,2.7-3.27C86.53,51.06,87.77,51,89,51 c20.95,0,38,17.05,38,38S109.95,127,89,127z"
+                            />
+                            <path
+                              fill="#18193f"
+                              d="M124,3c-1.66,0-3,1.34-3,3v14.19C112.8,12.27,99.79,4,83.58,0.67C81.96,0.33,80.38,1.38,80.04,3 c-0.33,1.62,0.71,3.21,2.33,3.54C97.65,9.69,109.98,17.78,117.32,25H102c-1.66,0-3,1.34-3,3s1.34,3,3,3h22c1.66,0,3-1.34,3-3V6 C127,4.34,125.66,3,124,3z"
+                            />
+                            <path
+                              fill="#18193f"
+                              d="M45.62,121.46c-15.27-3.14-27.6-11.23-34.94-18.46H26c1.66,0,3-1.34,3-3s-1.34-3-3-3H4c-1.66,0-3,1.34-3,3v22 c0,1.66,1.34,3,3,3s3-1.34,3-3v-14.19c8.2,7.93,21.2,16.19,37.41,19.52c0.2,0.04,0.41,0.06,0.61,0.06c1.39,0,2.64-0.98,2.94-2.4 C48.29,123.38,47.25,121.79,45.62,121.46z"
+                            />
+                            <g>
+                              <path
+                                fill="#fff"
+                                d="M39,52c-1.66,0-3-1.34-3-3V29c0-1.66,1.34-3,3-3s3,1.34,3,3v20C42,50.66,40.66,52,39,52z"
+                              />
+                            </g>
+                          </svg>
+                          <div className="ml-1 flex flex-wrap xl:flex-nowrap flex-col">
+                            <Link
+                              href="/web-app/custom-web-app"
+                              className="leading-4  font-semibold text-sky-700 hover:text-black gap-2 flex "
+                              onClick={servicesHandlertwo}
+                            >
+                              <h3>Blockchain</h3>
+                            </Link>
+                          </div>
+                        </div>
+
+                        <div className=" flex items-center font-semibold text-sky-700">
+                          <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 48 48"
+                            width="26px"
+                            height="26px"
+                          >
+                            <path
+                              fill="#90caf9"
+                              d="M32.5,43.1c0.2-1.9,1.6-3.5,3.5-3.9c1-0.2,2,0,2.9,0.4l1.9,0.8c0.4,0.2,0.9,0.1,1.2-0.2c1.5-1.8,2.7-3.8,3.5-6 c0.1-0.4,0-0.9-0.4-1.1l-1.6-1.2c-0.8-0.6-1.4-1.4-1.7-2.3c-0.6-1.9,0.1-3.9,1.6-5l1.8-1.3c0.4-0.3,0.5-0.7,0.4-1.1 c-0.8-2.2-2-4.3-3.5-6c-0.3-0.3-0.8-0.4-1.2-0.2L39,16.5c-0.9,0.4-1.9,0.6-2.9,0.4c-2-0.4-3.3-2-3.5-3.9l-0.2-2.2 c0-0.4-0.4-0.8-0.8-0.9c-1.1-0.2-2.3-0.3-3.5-0.3s-2.4,0.1-3.5,0.3c-0.4,0.1-0.7,0.4-0.8,0.9l-0.2,2c-0.1,1-0.5,1.9-1.1,2.7 c-1.3,1.5-3.4,1.9-5.2,1.1l-2-0.9c-0.4-0.2-0.9-0.1-1.2,0.2c-1.5,1.8-2.7,3.8-3.5,6c-0.1,0.4,0,0.9,0.4,1.1l1.6,1.2 c0.8,0.6,1.4,1.4,1.8,2.3c0.6,1.9-0.1,3.9-1.6,5L11,32.8c-0.4,0.3-0.5,0.7-0.4,1.1c0.8,2.2,2,4.3,3.5,6c0.3,0.3,0.8,0.4,1.2,0.2 l1.9-0.8c0.9-0.4,1.9-0.6,2.9-0.4c2,0.4,3.3,2,3.5,3.9l0.2,2.2c0,0.4,0.4,0.8,0.8,0.9c1.1,0.2,2.3,0.3,3.5,0.3s2.4-0.1,3.5-0.3 c0.4-0.1,0.7-0.4,0.8-0.9L32.5,43.1z"
+                            />
+                            <path
+                              fill="none"
+                              stroke="#18193f"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="3"
+                              d="M30.8,35.7c1.2-0.7,2.8-0.8,4.1-0.2l2.7,1.2c1.9-2,3.4-4.5,4.2-7.3l-2.4-1.7c-1.2-0.8-1.8-2.2-1.8-3.6 s0.7-2.8,1.8-3.6l2.4-1.7c-0.8-2.8-2.3-5.2-4.2-7.3l-2.7,1.2c-1.3,0.6-2.8,0.5-4.1-0.2s-2.1-2-2.2-3.4L28.2,6 c-1.4-0.3-2.8-0.5-4.2-0.5S21.1,5.7,19.8,6"
+                            />
+                            <path
+                              fill="none"
+                              stroke="#18193f"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="3"
+                              d="M17.3,12.3c-1.2,0.7-2.8,0.8-4.1,0.2l-2.7-1.2c-1.9,2-3.4,4.5-4.2,7.3l2.4,1.7c1.2,0.8,1.8,2.2,1.8,3.6 s-0.7,2.8-1.8,3.6l-2.4,1.7c0.8,2.8,2.3,5.2,4.2,7.3l2.7-1.2c1.3-0.6,2.8-0.5,4.1,0.2s2.1,2,2.2,3.4l0.3,2.9 c1.4,0.3,2.8,0.5,4.2,0.5s2.9-0.2,4.2-0.5"
+                            />
+                            <line
+                              x1="25.4"
+                              x2="22.6"
+                              y1="17.8"
+                              y2="30.2"
+                              fill="none"
+                              stroke="#18193f"
+                              strokeLinecap="round"
+                              strokeWidth="3"
+                            />
+                            <polyline
+                              fill="none"
+                              stroke="#18193f"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="3"
+                              points="29.3,27.7 32.6,24 29.3,20.3"
+                            />
+                            <polyline
+                              fill="none"
+                              stroke="#18193f"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="3"
+                              points="18.7,27.7 15.4,24 18.7,20.3"
+                            />
+                          </svg>
+                          <div className="ml-1 flex flex-wrap xl:flex-nowrap flex-col">
+                            <Link
+                              href="/web-app/responsive-web-app"
+                              className="leading-4 font-semibold text-sky-700  hover:text-black flex items-center"
+                              onClick={servicesHandlertwo}
+                            >
+                              <h3>Web Development</h3>
+                            </Link>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          )}
 
           <Link
             href="/portfolio"
@@ -1426,7 +1610,7 @@ const Navbar: FC<NavbarProps> = () => {
                   data-dropdown-toggle="mega-menu-dropdown"
                   className="flex items-center -ml-3 justify-between w-full py-2 px-3 font-bold text-gray-900  md:w-auto   md:border-0     "
                 >
-                  Services{" "}
+                  Services
                   <svg
                     className="w-2.5 h-2.5 ms-3 "
                     aria-hidden="true"
@@ -1576,7 +1760,7 @@ const Navbar: FC<NavbarProps> = () => {
                   data-dropdown-toggle="mega-menu-dropdown"
                   className="flex items-center -ml-3 justify-between w-full py-2 px-3 font-bold text-gray-900  md:w-auto   md:border-0     "
                 >
-                  Services{" "}
+                  Services
                   <svg
                     className="w-2.5 h-2.5 ms-3 "
                     aria-hidden="true"
@@ -2676,6 +2860,200 @@ const Navbar: FC<NavbarProps> = () => {
                         </div>
                       </div>
                     </div>
+                  </div>
+                )}
+
+                <button
+                  onClick={servicesHandlertwo}
+                  id="mega-menu-dropdown-button"
+                  data-dropdown-toggle="mega-menu-dropdown"
+                  className="flex items-center -ml-3 justify-between w-full py-2 px-3 font-bold text-gray-900  md:w-auto   md:border-0     "
+                >
+                  Blockchain
+                  <svg
+              className="w-2.5 h-2.5 ms-3"
+              aria-hidden="true"
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 10 6"
+            >
+              <path
+                stroke="currentColor"
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="m1 1 4 4 4-4"
+              />
+            </svg>
+                </button>
+                {checkClicksec && (
+                  <div
+                    ref={dropdownRef}
+                    id="mega-menu-dropdown"
+                    className=" grid    grid-cols-1 text-sm bg-white   rounded-lg     mt-5 md:mt-10 pb-4  "
+                  >
+                    {/* Blockchain Section */}
+                    <div className="   text-gray-900 md:pb-4 ">
+                      <div
+                        className="space-y-4"
+                        aria-labelledby="mega-menu-dropdown-button"
+                      >
+                        <div className="flex-wrap flex flex-col gap-2 items-start">
+                          <div className="relative flex-wrap flex-col flex">
+                           
+                            <div className=" relative">
+                              <div className="flex items-start font-semibold text-sky-700">
+                              <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 48 48"
+                            width="26px"
+                            height="26px"
+                          >
+                            <path
+                              fill="#90caf9"
+                              d="M44.475,24.803c0.774-2.528,0.53-5.23-0.722-7.583c-2.018-3.792-6.225-5.638-10.284-5.086 c-1.802-1.935-4.265-3.074-6.929-3.166c-4.294-0.149-7.996,2.572-9.547,6.363c-2.576,0.593-4.794,2.156-6.206,4.417 c-2.275,3.643-1.771,8.21,0.737,11.449c-0.774,2.528-0.53,5.23,0.722,7.583c2.018,3.792,6.225,5.638,10.284,5.086 c1.802,1.935,4.265,3.074,6.929,3.167c4.293,0.148,7.996-2.573,9.547-6.364c2.576-0.593,4.794-2.156,6.205-4.417 C47.486,32.608,46.982,28.042,44.475,24.803z"
+                            />
+                            <path
+                              fill="#18193f"
+                              d="M38.844,17.559l-7.523-4.343c-0.493-0.284-1.1-0.285-1.594-0.003l-10.245,5.855l0.021-4.018 l7.913-4.569c3.445-1.989,7.938-1.371,10.44,1.722c0.594,0.734,1.04,1.539,1.341,2.382c0.211,0.592,0.772,0.984,1.4,0.984 c1.037,0,1.772-1.03,1.421-2.006c-0.416-1.158-1.033-2.265-1.853-3.275c-2.488-3.065-6.393-4.357-10.151-3.807 c-1.987-2.124-4.699-3.373-7.63-3.473c-4.733-0.161-8.814,2.839-10.525,7.018c-2.842,0.654-5.289,2.378-6.847,4.873 c-3.318,5.313-1.284,12.41,4.142,15.543l7.523,4.343c0.493,0.284,1.1,0.285,1.594,0.003l10.245-5.855l-0.021,4.018l-7.902,4.563 c-3.448,1.991-7.945,1.378-10.451-1.715c-0.591-0.73-1.035-1.53-1.336-2.368c-0.212-0.591-0.772-0.982-1.4-0.982h0 c-1.039,0-1.774,1.033-1.421,2.01c0.326,0.901,0.774,1.771,1.344,2.589c2.43,3.487,6.613,5.039,10.645,4.465 c1.987,2.129,4.7,3.381,7.634,3.483c4.736,0.163,8.82-2.838,10.531-7.02c2.841-0.654,5.288-2.378,6.844-4.872 C46.303,27.788,44.269,20.691,38.844,17.559z M34,33.723c0,4.324-3.313,8.077-7.633,8.269c-1.837,0.082-3.585-0.463-5.024-1.496 c0.274-0.13,0.546-0.266,0.812-0.42l7.521-4.342c0.493-0.285,0.799-0.81,0.802-1.38l0.054-9.883c0.003-0.55-0.441-0.999-0.992-1 c-0.549-0.002-0.995,0.441-0.998,0.99l-0.011,2.172L18.498,32.37l-7.918-4.571c-3.745-2.163-5.339-6.908-3.345-10.745 c0.848-1.633,2.196-2.875,3.812-3.605C11.022,13.753,11,14.058,11,14.367v8.684c0,0.569,0.302,1.095,0.794,1.382l8.73,5.055 c0.475,0.275,1.082,0.113,1.358-0.361c0.277-0.476,0.114-1.085-0.362-1.361L14,23.42v-9.143c0-4.325,3.313-8.077,7.634-8.269 c1.835-0.081,3.582,0.462,5.02,1.494c-0.264,0.127-0.526,0.259-0.782,0.407l-7.548,4.357c-0.494,0.285-0.799,0.81-0.802,1.38 l-0.054,9.797c-0.003,0.55,0.441,0.999,0.992,1c0.549,0.002,0.995-0.441,0.998-0.99l0.011-2.087l4.552-2.603L34,24.58V33.723z M40.765,30.946c-0.848,1.633-2.195,2.875-3.812,3.604C36.978,34.248,37,33.944,37,33.636v-8.687c0-0.569-0.302-1.095-0.794-1.382 l-10.191-5.943l3.487-1.994l7.918,4.571C41.165,22.364,42.759,27.109,40.765,30.946z"
+                            />
+                          </svg>
+                                <div className="ml-1 flex flex-wrap xl:flex-nowrap flex-col">
+                                  <h3>AI</h3>
+                                  {/* <div className="flex flex-wrap xl:flex-nowrap text-gray-700  ">
+                                    <Link
+                                      href="/nft-development"
+                                      className="leading-4 hover:text-gray-500 text-[12px] font-medium  flex items-start"
+                                      onClick={() => setMobileMenuOpen(false)}
+                                    >
+                                      Blockchain
+                                    </Link>
+                                    <Link
+                                      href="/nft-marketplace-development"
+                                      className="leading-4 hover:text-gray-500 text-[12px] font-medium pl-0 xl:pl-2 flex items-start"
+                                      onClick={() => setMobileMenuOpen(false)}
+                                    >
+                                      Web Development
+                                    </Link>
+                                  </div> */}
+                                </div>
+                              </div>
+
+                              <div className="my-6 flex  items-center font-semibold text-sky-700">
+                              <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 128 128"
+                            width="26px"
+                            height="26px"
+                          >
+                            <circle cx="89" cy="89" r="35" fill="#fff" />
+                            <circle cx="39" cy="39" r="35" fill="#90caf9" />
+                            <path
+                              fill="#90caf9"
+                              d="M39,77C18.05,77,1,59.95,1,39S18.05,1,39,1s38,17.05,38,38S59.95,77,39,77z M39,7C21.36,7,7,21.35,7,39 s14.36,32,32,32s32-14.35,32-32S56.64,7,39,7z"
+                            />
+                            <path
+                              fill="#90caf9"
+                              d="M89,127c-20.95,0-38-17.05-38-38c0-1.22,0.06-2.45,0.17-3.66c0.16-1.65,1.64-2.85,3.27-2.7 c1.65,0.16,2.86,1.62,2.7,3.27C57.05,86.93,57,87.97,57,89c0,17.65,14.36,32,32,32s32-14.35,32-32s-14.36-32-32-32 c-1.04,0-2.09,0.05-3.11,0.15c-1.64,0.16-3.12-1.05-3.27-2.7s1.05-3.12,2.7-3.27C86.53,51.06,87.77,51,89,51 c20.95,0,38,17.05,38,38S109.95,127,89,127z"
+                            />
+                            <path
+                              fill="#18193f"
+                              d="M124,3c-1.66,0-3,1.34-3,3v14.19C112.8,12.27,99.79,4,83.58,0.67C81.96,0.33,80.38,1.38,80.04,3 c-0.33,1.62,0.71,3.21,2.33,3.54C97.65,9.69,109.98,17.78,117.32,25H102c-1.66,0-3,1.34-3,3s1.34,3,3,3h22c1.66,0,3-1.34,3-3V6 C127,4.34,125.66,3,124,3z"
+                            />
+                            <path
+                              fill="#18193f"
+                              d="M45.62,121.46c-15.27-3.14-27.6-11.23-34.94-18.46H26c1.66,0,3-1.34,3-3s-1.34-3-3-3H4c-1.66,0-3,1.34-3,3v22 c0,1.66,1.34,3,3,3s3-1.34,3-3v-14.19c8.2,7.93,21.2,16.19,37.41,19.52c0.2,0.04,0.41,0.06,0.61,0.06c1.39,0,2.64-0.98,2.94-2.4 C48.29,123.38,47.25,121.79,45.62,121.46z"
+                            />
+                            <g>
+                              <path
+                                fill="#fff"
+                                d="M39,52c-1.66,0-3-1.34-3-3V29c0-1.66,1.34-3,3-3s3,1.34,3,3v20C42,50.66,40.66,52,39,52z"
+                              />
+                            </g>
+                          </svg>
+                                <div className="ml-1 flex flex-wrap xl:flex-nowrap flex-col">
+                                  <Link
+                                    href="/defi"
+                                    className="leading-4 font-semibold text-sky-700  hover:text-black flex items-center"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                  >
+                                    <h3>Blockchain</h3>
+                                  </Link>
+                                </div>
+                              </div>
+
+                              <div className="flex items-center  font-semibold text-sky-700">
+                              <svg
+                            xmlns="http://www.w3.org/2000/svg"
+                            viewBox="0 0 48 48"
+                            width="26px"
+                            height="26px"
+                          >
+                            <path
+                              fill="#90caf9"
+                              d="M32.5,43.1c0.2-1.9,1.6-3.5,3.5-3.9c1-0.2,2,0,2.9,0.4l1.9,0.8c0.4,0.2,0.9,0.1,1.2-0.2c1.5-1.8,2.7-3.8,3.5-6 c0.1-0.4,0-0.9-0.4-1.1l-1.6-1.2c-0.8-0.6-1.4-1.4-1.7-2.3c-0.6-1.9,0.1-3.9,1.6-5l1.8-1.3c0.4-0.3,0.5-0.7,0.4-1.1 c-0.8-2.2-2-4.3-3.5-6c-0.3-0.3-0.8-0.4-1.2-0.2L39,16.5c-0.9,0.4-1.9,0.6-2.9,0.4c-2-0.4-3.3-2-3.5-3.9l-0.2-2.2 c0-0.4-0.4-0.8-0.8-0.9c-1.1-0.2-2.3-0.3-3.5-0.3s-2.4,0.1-3.5,0.3c-0.4,0.1-0.7,0.4-0.8,0.9l-0.2,2c-0.1,1-0.5,1.9-1.1,2.7 c-1.3,1.5-3.4,1.9-5.2,1.1l-2-0.9c-0.4-0.2-0.9-0.1-1.2,0.2c-1.5,1.8-2.7,3.8-3.5,6c-0.1,0.4,0,0.9,0.4,1.1l1.6,1.2 c0.8,0.6,1.4,1.4,1.8,2.3c0.6,1.9-0.1,3.9-1.6,5L11,32.8c-0.4,0.3-0.5,0.7-0.4,1.1c0.8,2.2,2,4.3,3.5,6c0.3,0.3,0.8,0.4,1.2,0.2 l1.9-0.8c0.9-0.4,1.9-0.6,2.9-0.4c2,0.4,3.3,2,3.5,3.9l0.2,2.2c0,0.4,0.4,0.8,0.8,0.9c1.1,0.2,2.3,0.3,3.5,0.3s2.4-0.1,3.5-0.3 c0.4-0.1,0.7-0.4,0.8-0.9L32.5,43.1z"
+                            />
+                            <path
+                              fill="none"
+                              stroke="#18193f"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="3"
+                              d="M30.8,35.7c1.2-0.7,2.8-0.8,4.1-0.2l2.7,1.2c1.9-2,3.4-4.5,4.2-7.3l-2.4-1.7c-1.2-0.8-1.8-2.2-1.8-3.6 s0.7-2.8,1.8-3.6l2.4-1.7c-0.8-2.8-2.3-5.2-4.2-7.3l-2.7,1.2c-1.3,0.6-2.8,0.5-4.1-0.2s-2.1-2-2.2-3.4L28.2,6 c-1.4-0.3-2.8-0.5-4.2-0.5S21.1,5.7,19.8,6"
+                            />
+                            <path
+                              fill="none"
+                              stroke="#18193f"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="3"
+                              d="M17.3,12.3c-1.2,0.7-2.8,0.8-4.1,0.2l-2.7-1.2c-1.9,2-3.4,4.5-4.2,7.3l2.4,1.7c1.2,0.8,1.8,2.2,1.8,3.6 s-0.7,2.8-1.8,3.6l-2.4,1.7c0.8,2.8,2.3,5.2,4.2,7.3l2.7-1.2c1.3-0.6,2.8-0.5,4.1,0.2s2.1,2,2.2,3.4l0.3,2.9 c1.4,0.3,2.8,0.5,4.2,0.5s2.9-0.2,4.2-0.5"
+                            />
+                            <line
+                              x1="25.4"
+                              x2="22.6"
+                              y1="17.8"
+                              y2="30.2"
+                              fill="none"
+                              stroke="#18193f"
+                              strokeLinecap="round"
+                              strokeWidth="3"
+                            />
+                            <polyline
+                              fill="none"
+                              stroke="#18193f"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="3"
+                              points="29.3,27.7 32.6,24 29.3,20.3"
+                            />
+                            <polyline
+                              fill="none"
+                              stroke="#18193f"
+                              strokeLinecap="round"
+                              strokeLinejoin="round"
+                              strokeWidth="3"
+                              points="18.7,27.7 15.4,24 18.7,20.3"
+                            />
+                          </svg>
+                                <div className="ml-1 flex flex-wrap xl:flex-nowrap flex-col">
+                                  <Link
+                                    href="/cryptocurrency-exchange"
+                                    className="leading-4  font-semibold text-sky-700 hover:text-black gap-2 flex "
+                                    onClick={() => setMobileMenuOpen(false)}
+                                  >
+                                    <h3>Web Development</h3>
+                                  </Link>
+                                </div>
+                              </div>
+                          
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                 
                   </div>
                 )}
 
