@@ -1326,7 +1326,7 @@ const Navbar: FC<NavbarProps> = () => {
                           </svg>
                           <div className="ml-1 flex flex-wrap xl:flex-nowrap flex-col">
                             <Link
-                              href="/web-app/web-design"
+                              href="/ai_blog"
                               className="leading-4  font-semibold text-sky-700 hover:text-black"
                               onClick={servicesHandlertwo}
                             >
@@ -2919,23 +2919,13 @@ const Navbar: FC<NavbarProps> = () => {
                                   />
                                 </svg>
                                 <div className="ml-1 flex flex-wrap xl:flex-nowrap flex-col">
-                                  <h3>AI</h3>
-                                  {/* <div className="flex flex-wrap xl:flex-nowrap text-gray-700  ">
-                                    <Link
-                                      href="/nft-development"
-                                      className="leading-4 hover:text-gray-500 text-[12px] font-medium  flex items-start"
-                                      onClick={() => setMobileMenuOpen(false)}
-                                    >
-                                      Blockchain
-                                    </Link>
-                                    <Link
-                                      href="/nft-marketplace-development"
-                                      className="leading-4 hover:text-gray-500 text-[12px] font-medium pl-0 xl:pl-2 flex items-start"
-                                      onClick={() => setMobileMenuOpen(false)}
-                                    >
-                                      Web Development
-                                    </Link>
-                                  </div> */}
+                                <Link
+                                    href="#"
+                                    className="leading-4 font-semibold text-sky-700  hover:text-black flex items-center"
+                                    onClick={() => setMobileMenuOpen(false)}
+                                  >
+                                    <h3>AI</h3>
+                                  </Link>
                                 </div>
                               </div>
 
