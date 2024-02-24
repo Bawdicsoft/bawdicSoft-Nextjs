@@ -110,16 +110,16 @@ function classNames(
 const Navbar: FC<NavbarProps> = () => {
   const [mobileMenuOpen, setMobileMenuOpen] = useState<boolean>(false);
   const [checkClick, setCheckClick] = useState<boolean>(false);
-  const [checkClicksec, setCheckClicksec] = useState<boolean>(false);
+  // const [checkClicksec, setCheckClicksec] = useState<boolean>(false);
 
   const dropdownRef = useRef<HTMLDivElement>(null);
 
   const servicesHandler = () => {
     setCheckClick(!checkClick);
   };
-  const servicesHandlertwo = () => {
-    setCheckClicksec(!checkClicksec);
-  };
+  // const servicesHandlertwo = () => {
+  //   setCheckClicksec(!checkClicksec);
+  // };
 
   const handleClickOutside = (event: MouseEvent) => {
     if (
@@ -1270,7 +1270,7 @@ const Navbar: FC<NavbarProps> = () => {
             </div>
           )}
           {/* <DropDown /> */}
-          <button
+          {/* <button
             onClick={servicesHandlertwo}
             id="mega-menu-dropdown-button"
             data-dropdown-toggle="mega-menu-dropdown"
@@ -1292,14 +1292,13 @@ const Navbar: FC<NavbarProps> = () => {
                 d="m1 1 4 4 4-4"
               />
             </svg>
-          </button>
-          {checkClicksec && (
+          </button> */}
+          {/* {checkClicksec && (
             <div
               ref={dropdownRef}
               id="mega-menu-dropdown"
               className="absolute z-10  text-sm bg-white border border-gray-100 rounded-lg shadow-md mt-10 p-4 left-1/2 transform -translate-x-1/2 max-w-7xl "
             >
-              {/* Blockchain Section */}{" "}
               <div className="pt-4 pl-4 text-gray-900">
                 <div
                   className="space-y-4"
@@ -1448,7 +1447,7 @@ const Navbar: FC<NavbarProps> = () => {
                 </div>
               </div>
             </div>
-          )}
+          )} */}
 
           <Link
             href="/portfolio"
@@ -2864,7 +2863,7 @@ const Navbar: FC<NavbarProps> = () => {
                   </div>
                 )}
 
-                <button
+                {/* <button
                   onClick={servicesHandlertwo}
                   id="mega-menu-dropdown-button"
                   data-dropdown-toggle="mega-menu-dropdown"
@@ -2893,7 +2892,6 @@ const Navbar: FC<NavbarProps> = () => {
                     id="mega-menu-dropdown"
                     className=" grid    grid-cols-1 text-sm bg-white   rounded-lg     mt-5 md:mt-10 pb-4  "
                   >
-                    {/* Blockchain Section */}
                     <div className="   text-gray-900 md:pb-4 ">
                       <div
                         className="space-y-4"
@@ -3047,7 +3045,7 @@ const Navbar: FC<NavbarProps> = () => {
                       </div>
                     </div>
                   </div>
-                )}
+                )} */}
 
                 <Link
                   href="/portfolio"
