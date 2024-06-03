@@ -2,7 +2,7 @@ import React, { FC, ReactNode, MouseEvent } from "react";
 // import needImage from "../../../../public/images/AI/generatinAi.webp";
 import Image, { StaticImageData } from "next/image";
 import AnimatedComponentRight from "@/components/home/animationRight";
-interface GenerationAISectionResponsiveWebAppProps {}
+interface GenerationAISectionResponsiveWebAppProps { }
 
 type imageList = {
   image: StaticImageData;
@@ -18,12 +18,10 @@ const GenerationAISectionResponsiveWebApp: FC<
       <div className=" grid grid-cols-1 gap-5 px-5  md:grid-cols-2    py-16">
         <div className="max-w-lg lg:max-w-lg  self-center  px-5   order-2 md:order-none ">
           <p className="mb-4 text-2xl  font-semibold tracking-tight leading-7 md:text-3xl lg:text-4xl ">
-            Generation AI Brilliance​
+            User-Centric Navigation and Design
           </p>
           <p className="text-md text-gray-800 leading-6">
-            Inspire creativity and innovation with our productive AI solutions.
-            From art to content creation, our AI algorithms generate new ideas
-            and products that take your business into uncharted territory.
+            Prioritize user satisfaction with Us. Our responsive web apps focus on  navigation and design, enhancing user experience. From touch-friendly interfaces to easily accessible menus, we craft responsive solutions that keep your audience engaged and connected across platforms.
           </p>
         </div>
         <AnimatedComponentRight>

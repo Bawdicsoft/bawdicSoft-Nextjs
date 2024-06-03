@@ -29,12 +29,11 @@ const LanguageModelSectionNaturalLanguage: FC<
         </AnimatedComponentLeft>
         <div className="max-w-lg self-center lg:max-w-lg  pt-10 px-5   ">
           <p className="mb-4 text-2xl text-white  font-semibold tracking-tight leading-7 md:text-3xl lg:text-4xl ">
-            Language Model (LLM) Skills
-          </p>
+          Language Generation and Synthesis          </p>
           <p className="text-md  text-white leading-6">
-            Communicate clearly and intelligently through our Language Model
-            (LLM) services. Leverage natural language processing, sentiment
-            analysis, and more to redefine how you connect with your audience.
+          Commence on a journey of expressive content with Us. From dynamic dialogue to succinct summarization, we go beyond the ordinary, breathing life into words. Let our expertise boost-up your message and captivate your audience.
+
+
           </p>
         </div>
       </div>

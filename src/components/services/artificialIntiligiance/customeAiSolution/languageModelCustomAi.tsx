@@ -29,12 +29,10 @@ const LanguageModelSectionCustomAi: FC<
         </AnimatedComponentLeft>
         <div className="max-w-lg self-center lg:max-w-lg  pt-10 px-5   ">
           <p className="mb-4 text-2xl text-white  font-semibold tracking-tight leading-7 md:text-3xl lg:text-4xl ">
-            Language Model (LLM) Skills
+          Industry-Specific AI Solutions
           </p>
           <p className="text-md  text-white leading-6">
-            Communicate clearly and intelligently through our Language Model
-            (LLM) services. Leverage natural language processing, sentiment
-            analysis, and more to redefine how you connect with your audience.
+          We specialize in crafting AI solutions adapted to your industry's needs. From healthcare to finance, retail to manufacturing, our industry-specific AI applications optimize processes, enhance decision-making, and unlock new possibilities. Discover how our intelligent solutions can revolutionize your sector.
           </p>
         </div>
       </div>

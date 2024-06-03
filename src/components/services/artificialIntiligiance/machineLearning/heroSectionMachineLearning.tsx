@@ -20,12 +20,10 @@ const HeroSectionMachineLearning: FC<deFiSectionProps> = () => {
     >
       <div className="px-4 mx-auto max-w-7xl text-center  md:pt-56 lg:py-56">
         <h1 className="mb-4 text-4xl font-extrabold tracking-tight leading-none text-white  lg:text-6xl -ml-30">
-          Machine Learning
-        </h1>
+        Machine Learning
+                </h1>
         <p className="mb-8  md:text-lg font-normal text-gray-300 lg:text-xl sm:px-16 ">
-          Focus on AI services, creating machines that require human-like
-          intelligence such as learning from experience, understanding natural
-          languages, and solving complex problems.
+        Commence on a Journey with Us into the World of Intelligent Machines. Discover the Future through our Innovative Machine Learning Solutions.
         </p>
       </div>
     </section>
